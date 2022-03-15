@@ -1,5 +1,6 @@
 public class SumofKelement{
     public static int[] sum(int[] arr,int k){
+        //String s=s.
         int sum=0;
         int size=(int)Math.pow(2,k)-1;
         int[] res=new int[size];
@@ -9,6 +10,7 @@ public class SumofKelement{
             }
             res[i]=sum;
             sum=0;
+
         }
         return res;
     }
