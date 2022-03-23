@@ -3,17 +3,26 @@ package LinkList;
 import java.util.Scanner;
 //TAKE INPUT
 //User input the numbers
+class Node1<Integer>{
+    Node1 next=null;
+    int data;
+
+    public Node1(int data) {
+        this.data=data;
+        this.next=null;
+    }
+}
 public class InputLinkedList {
-    public static Node<Integer> takeinput(){
+    public static Node1<Integer> takeinput(){
         Scanner sc =new Scanner(System.in);
         int data=sc.nextInt();
-        Node<Integer>head=null;
+        Node1<Integer>head=null;
         while(data!=-1){
-            Node <Integer>currNode=new Node<Integer>(data);
+            Node1 <Integer>currNode=new Node1<Integer>(data);
             if(head==null){
                 head=currNode;
             }else{
-                Node<Integer>tail=head;
+                Node1<Integer>tail=head;
                 while(tail.next!=null){
                     tail=tail.next;
                 }
@@ -23,6 +32,11 @@ public class InputLinkedList {
 
             data=sc.nextInt();
         }
+        return head;
+    }
 
+    public static void main(String[] args) {
+        Node1<Integer> head=takeinput();
+        System.out.println(head);
     }
 }
