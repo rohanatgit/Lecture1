@@ -34,6 +34,17 @@ public class LinkedList1 {
      tail.next=null;
      return value;
     }
+    public int delet(int index){
+        if(index==0){
+            return deleteFirst();
+        }
+        else if(index==size-1){
+            return lastDelet();
+        }
+        Node prev =get(index-1);
+        int value=prev.next.value;
+        return value;
+    }
     public Node get(int index){
         Node node=head;
         for(int i=0;i<index && head!=null;i++){
