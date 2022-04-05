@@ -61,4 +61,9 @@ public class BinaryTree {
         System.out.println("post traversel =    "  );
         tree.postorder();
     }//main close
-}//binary tree close
+}/*binary tree close
+fuzzy interface
+level or depth same
+ 2^(d+1) -1 = total number of node only in complete binary tree
+total number of non-leaf internal nodes 2^d -1
+height =1 se START hoti *//*hai */
