@@ -30,10 +30,10 @@ class AddOne
             sum = sum%10;
             head.data = sum;
             temp = head;
-            head = head.next;
+         //   head = head.next;
         }
         if(carry>0){
-            temp.next = new Node(carry);
+            //temp.next = new Node(carry);
         }
         return res;
     }
@@ -43,8 +43,8 @@ class AddOne
         Node next = null;
         Node curr = head;
         while(curr!=null){
-            next = curr.next;
-            curr.next = prev;
+            //next = curr.next;
+          //  curr.next = prev;
             prev = curr;
             curr = next;;
         }
