@@ -13,6 +13,7 @@ class AddOne
 {
     public static Node addOne(Node head)
     {
+
         return reverse(add(reverse(head)));
     }
 
@@ -33,7 +34,7 @@ class AddOne
          //   head = head.next;
         }
         if(carry>0){
-            //temp.next = new Node(carry);
+           // temp.next = new Node(carry);
         }
         return res;
     }
@@ -42,9 +43,8 @@ class AddOne
         Node prev = null;
         Node next = null;
         Node curr = head;
-        while(curr!=null){
-            //next = curr.next;
-          //  curr.next = prev;
+        while(curr!=null){     //next = curr.next;
+            //  curr.next = prev;
             prev = curr;
             curr = next;;
         }
