@@ -3,7 +3,7 @@ package LeetCodeSolution;
 public class ThreeSum {
     class Solution {
         public int threeSumClosest(int[] nums, int target) {
-            Arrays.sort(nums);
+//            Arrays.sort(nums);
 
             int diff = Integer.MAX_VALUE;
 
